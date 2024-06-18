@@ -1,3 +1,4 @@
+#if os(iOS)
 import MapKit
 
 /// Map overlay that represents polyline with provided coordinates.
@@ -45,3 +46,4 @@ extension LineOverlay {
     return renderer
   }
 }
+#endif

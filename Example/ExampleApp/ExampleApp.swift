@@ -20,6 +20,7 @@ struct ExampleView: View {
 
   var body: some View {
     ZStack {
+#if os(iOS)
       MapView(
         visibleRect: $mapRect,
         annotations: coordinates.map { coordinate in
@@ -57,6 +58,7 @@ struct ExampleView: View {
       .buttonStyle(.borderedProminent)
       .padding()
       .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+#endif
     }
   }
 }

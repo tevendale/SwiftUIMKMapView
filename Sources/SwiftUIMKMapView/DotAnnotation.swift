@@ -1,3 +1,4 @@
+#if os(iOS)
 import MapKit
 
 /// Map annotation representing dot at provided coordinate.
@@ -73,3 +74,4 @@ extension DotAnnotation {
   /// Annotation view factory for `DotAnnotation` that uses `DotAnnotationView`.
   public static let viewFactory: AnnotationViewFactory = .factory(for: DotAnnotation.self, DotAnnotationView.self)
 }
+#endif

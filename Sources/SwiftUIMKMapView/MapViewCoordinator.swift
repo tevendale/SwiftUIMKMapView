@@ -1,3 +1,4 @@
+#if os(iOS)
 import MapKit
 
 /// Coordinator for the MapView UIViewRepresentable.
@@ -21,3 +22,4 @@ public final class MapViewCoordinator: NSObject, MKMapViewDelegate {
     view.overlayRendererFactory.rendererFor(overlay) ?? .init()
   }
 }
+#endif

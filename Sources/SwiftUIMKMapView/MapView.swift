@@ -1,3 +1,4 @@
+#if os(iOS)
 import SwiftUI
 import MapKit
 
@@ -71,3 +72,4 @@ public struct MapView: UIViewRepresentable {
     }
   }
 }
+#endif
